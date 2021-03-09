@@ -108,6 +108,7 @@ class orangehrmCorePluginAllTests {
         $suite->addTestFile(dirname(__FILE__) . '/ohrmWidgets/ohrmReportWidgetPayGradeDropDownTest.php');
         $suite->addTestFile(dirname(__FILE__) . '/ohrmWidgets/ohrmReportWidgetServicePeriodTest.php');
         $suite->addTestFile(dirname(__FILE__) . '/ohrmWidgets/ohrmReportWidgetSkillDropDownTest.php');
+        $suite->addTestFile(dirname(__FILE__) . '/ohrmWidgets/ohrmWidgetJobTitleListTest.php');
 
         return $suite;
     }
