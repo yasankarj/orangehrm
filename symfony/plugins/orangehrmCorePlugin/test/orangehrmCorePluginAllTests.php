@@ -111,6 +111,8 @@ class orangehrmCorePluginAllTests {
         $suite->addTestFile(dirname(__FILE__) . '/ohrmWidgets/ohrmWidgetJobTitleListTest.php');
         $suite->addTestFile(dirname(__FILE__) . '/ohrmWidgets/ohrmWidgetProjectListWithAllOptionTest.php');
         $suite->addTestFile(dirname(__FILE__) . '/ohrmWidgets/ohrmWidgetProjectActivityListTest.php');
+        $suite->addTestFile(dirname(__FILE__) . '/ohrmWidgets/ohrmWidgetEmploymentStatusListTest.php');
+
 
         return $suite;
     }
