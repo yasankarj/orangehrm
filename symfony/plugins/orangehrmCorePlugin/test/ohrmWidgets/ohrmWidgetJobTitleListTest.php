@@ -36,25 +36,25 @@ class ohrmWidgetJobTitleListTest  extends PHPUnit\Framework\TestCase
 
     public function testGenerateWhereClausePartAsValueAsString()
     {
-        $returnValue = $this->ohrmWidgetJobTitleList->generateWhereClausePart('ohrm_job_title.id', '1');
-        $this->assertEquals("ohrm_job_title.id = '1'",$returnValue);
+        $returnValue = $this->ohrmWidgetJobTitleList->generateWhereClausePart('fieldName', '1');
+        $this->assertEquals("fieldName = '1'",$returnValue);
     }
 
     public function testGenerateWhereClausePartAsValueAsInteger()
     {
-        $returnValue = $this->ohrmWidgetJobTitleList->generateWhereClausePart('ohrm_job_title.id', 1);
-        $this->assertEquals("ohrm_job_title.id = '1'",$returnValue);
+        $returnValue = $this->ohrmWidgetJobTitleList->generateWhereClausePart('fieldName', 1);
+        $this->assertEquals("fieldName = '1'",$returnValue);
     }
 
     public function testGenerateWhereClausePartAsValueAsSpecialCharacter()
     {
-        $returnValue = $this->ohrmWidgetJobTitleList->generateWhereClausePart('ohrm_job_title.id', '`');
-        $this->assertEquals("ohrm_job_title.id = '`'",$returnValue);
+        $returnValue = $this->ohrmWidgetJobTitleList->generateWhereClausePart('fieldName', '`');
+        $this->assertEquals("fieldName = '`'",$returnValue);
     }
 
     public function testGenerateWhereClausePartWithSql()
     {
-        $returnValue = $this->ohrmWidgetJobTitleList->generateWhereClausePart('ohrm_job_title.id', '1;DELETE FROM `hs_hr_employee` WHERE `hs_hr_employee`.`emp_number` = 1;');
-        $this->assertEquals("ohrm_job_title.id = '1;DELETE FROM `hs_hr_employee` WHERE `hs_hr_employee`.`emp_number` = 1;'",$returnValue);
+        $returnValue = $this->ohrmWidgetJobTitleList->generateWhereClausePart('fieldName', '1;DELETE FROM `hs_hr_employee` WHERE `hs_hr_employee`.`emp_number` = 1;');
+        $this->assertEquals("fieldName = '1;DELETE FROM `hs_hr_employee` WHERE `hs_hr_employee`.`emp_number` = 1;'",$returnValue);
     }
 }

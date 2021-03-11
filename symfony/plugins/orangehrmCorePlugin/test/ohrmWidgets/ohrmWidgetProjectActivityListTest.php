@@ -29,7 +29,7 @@ class ohrmWidgetProjectActivityListTest  extends PHPUnit\Framework\TestCase
 
     protected function setUp(): void
     {
-        $this->ohrmWidgetProjectActivityList = $this->getMockBuilder(ohrmWidgetJobTitleList::class)
+        $this->ohrmWidgetProjectActivityList = $this->getMockBuilder(ohrmWidgetProjectActivityList::class)
             ->setMethods(['configure'])
             ->getMock();
     }
