@@ -115,6 +115,8 @@ class orangehrmCorePluginAllTests {
         $suite->addTestFile(dirname(__FILE__) . '/ohrmWidgets/ohrmWidgetSubDivisionListTest.php');
         $suite->addTestFile(dirname(__FILE__) . '/ohrmWidgets/ohrmWidgetDateRangeTest.php');
         $suite->addTestFile(dirname(__FILE__) . '/ohrmWidgets/ohrmWidgetDateIntervalTest.php');
+        $suite->addTestFile(dirname(__FILE__) . '/ohrmWidgets/ohrmWidgetEmployeeListAutoFillTest.php');
+        $suite->addTestFile(dirname(__FILE__) . '/ohrmWidgets/ohrmWidgetEmployeeListTest.php');
 
         return $suite;
     }
